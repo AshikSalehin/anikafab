@@ -1,0 +1,56 @@
+<div class="form-horizontal"
+    style="padding: 10px; border-radius: 10px;border: 0px solid black; margin: 25px;box-shadow: 5px 10px 18px #888888, 10px 18px 25px #888888,  18px 25px 30px #888888;">
+    <br>
+
+    <div style="text-align: center;">
+        <h4>Sales Entry Form</h4>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Product Name:</label>
+        <div class="col-sm-10">
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="memo">Memo Number:</label>
+        <div class="col-sm-10">
+            <input ng-required="true" type="text" class="form-control" id="memo" placeholder="Enter memo number"
+                name="memo" ng-model="obj.email"></input>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="phn">Quantity:</label>
+        <div class="col-sm-10" style="width: 30%;">
+            <input type="text" class="form-control" id="roll" placeholder="Enter Roll " name="roll" ng-model="obj.phn"
+                ng-required="phn">
+        </div>
+        <div class="col-sm-10" style="width: 30%;">
+            <input type="text" class="form-control" id="yard" placeholder="Enter Yard" name="yard" ng-model="obj.phn"
+                ng-required="phn">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="phn">Date: </label>
+        <div class="col-sm-10">
+            <label class="form-control" name="phn">{{currentDate}}</label>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            <input class="btn btn-default" type="submit" id="submit" value="Submit" ng-click="insertData()">
+        </div>
+    </div>
+
+</div>
