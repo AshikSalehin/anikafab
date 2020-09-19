@@ -1,0 +1,145 @@
+<div
+  style="overflow: auto; margin: 25px; padding: 5px 5px 5px;box-shadow: 0 0 5px #b3d4ee, 0 0 10px #665d5d, 0 0 15px #413a3c; height: 85%;width: 100%;"
+  layout="column" layout-align="center">
+
+  <div layout="row" style="background-color: azure; width: 100%;" onMouseOver="this.style.background ='grey'"
+    onMouseOut="this.style.background ='azure'">
+    <div layout="column" flex="20" layout-align="center center" style="border: 1px solid; height: 35px;">
+      <b>Product Name</b>
+    </div>
+    <div layout="column" flex="10" layout-align="center center" style="border: 1px solid;height: 35px;">
+      <b>Roll</b>
+    </div>
+    <div layout="column" flex="10" layout-align="center center" style="border: 1px solid;height: 35px;">
+      <b>Yard</b>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;height: 35px;">
+      <b>Price</b>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;height: 35px;">
+      <b>Brand</b>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style=" border: 1px solid;height: 35px;">
+      <b>Edit</b>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style=" border: 1px solid;height: 35px;">
+      <b>Delete</b>
+    </div><div layout="column" flex="15" layout-align="center center" style="border: 1px solid;height: 35px;">
+      <b>Brand</b>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style=" border: 1px solid;height: 35px;">
+      <b>Edit</b>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style=" border: 1px solid;height: 35px;">
+      <b>Delete</b>
+    </div>
+  </div>
+
+  <div layout="row" ng-repeat="item in details" style="height: 50px;" onMouseOver="this.style.background ='grey'"
+    onMouseOut="this.style.background ='white'">
+    <div layout="column" flex="20" layout-align="center center" style="border: 1px solid; width: 60px;">
+      {{item.productName}}
+    </div>
+    <div layout="column" flex="10" layout-align="center center" style="border: 1px solid;">
+      {{item.roll}}
+    </div>
+    <div layout="column" flex="10" layout-align="center center" style="border: 1px solid;">
+      {{item.yard}}
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      {{item.price}}
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      {{item.brand}}
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      <md-button ng-click="vm.showAdvanced($index)" class="md-raised">
+        Edit
+      </md-button>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      <md-button ng-click="vm.deleteData($index)" class="md-warn">
+        Delete
+      </md-button>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      {{item.brand}}
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      <md-button ng-click="vm.showAdvanced($index)" class="md-raised">
+        Edit
+      </md-button>
+    </div>
+    <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;">
+      <md-button ng-click="vm.deleteData($index)" class="md-warn">
+        Delete
+      </md-button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div layout="row" style="background-color: azure; width: 100%;" onMouseOver="this.style.background ='grey'"
+  onMouseOut="this.style.background ='azure'">
+  <div layout="column" flex="20" layout-align="center center" style="border: 1px solid; height: 35px;">
+    <b>Product Name</b>
+  </div>
+  <div layout="column" flex="10" layout-align="center center" style="border: 1px solid;height: 35px;">
+    <b>Roll</b>
+  </div>
+  <div layout="column" flex="10" layout-align="center center" style="border: 1px solid;height: 35px;">
+    <b>Yard</b>
+  </div>
+  <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;height: 35px;">
+    <b>Price</b>
+  </div>
+  <div layout="column" flex="15" layout-align="center center" style="border: 1px solid;height: 35px;">
+    <b>Brand</b>
+  </div>
+  <div layout="column" flex="15" layout-align="center center" style=" border: 1px solid;height: 35px;">
+    <b>Edit</b>
+  </div>
+  <div layout="column" flex="15" layout-align="center center" style=" border: 1px solid;height: 35px;">
+    <b>Delete</b>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- <table border='1' style='border-collapse:collapse'>
+    <th>
+      <td> Product Name </td>
+      <td> Roll </td>
+      <td> Yard </td>
+      <td> Price </td>
+      <td> Brand </td>
+      <td> Edit </td>
+      <td> Delete </td>
+    </th>
+    <tr ng-repeat="item in details">
+      <td> {{item.productName}} </td>
+      <td> {{item.roll}} </td>
+      <td> {{item.yard}} </td>
+      <td> {{item.price}} </td>
+      <td> {{item.brand}} </td>
+      <td>
+        <md-button ng-click="vm.showAdvanced($index)">
+          Edit
+        </md-button>
+      </td>
+      <td>
+        <md-button ng-click="vm.deleteData($index)">
+          Delete
+        </md-button>
+      </td>
+    </tr>
+  </table> -->
+
+</div>
+
